@@ -2,7 +2,7 @@ export abstract class View <T> {
 
     protected elemento: HTMLElement;
 
-    constructor(seletor: string){
+    constructor(seletor: string, escapar: boolean){
         this.elemento = document.querySelector(seletor);
     }
      public update(model: T): void{
